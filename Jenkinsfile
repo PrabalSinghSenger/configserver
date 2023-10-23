@@ -4,7 +4,7 @@
   def mvncmd = "${mvnhome/bin/mvn} "
    stage('Checkout'){
    	checkout([$class : 'GitSCM',
-   			  branches :[[name : '*/main']],
+   			  branches :[[name : '*/master']],
    			  extensions :[],
    			  userRemoteConfigs : [[credentialsId:'git',
    			  url:'https://github.com/PrabalSinghSenger/configserver.git']]
